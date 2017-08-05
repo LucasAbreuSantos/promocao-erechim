@@ -1,0 +1,25 @@
+<table class="table table-bordered table-responsive">
+	<caption> Lista de Produtos</caption>
+	<thead>
+		<tr>
+			<th>Produto</th>
+			<th>Preço</th>
+			<th>Descrição</th>
+			<th>Estabelecimento</th>
+			<th>Endereço</th>
+			<th>Fim da promoção</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @produtos_por_nome.each do |produto|%>
+		<tr>
+			<td><%= produto.nome %></td>
+			<td><%= produto.preco %></td>
+			<td><%= produto.descricao %></td>
+			<td><%= produto.estabelecimento %></td>
+			<td><%= produto.endereco %></td>
+			<td><%= produto.fim_promocao %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

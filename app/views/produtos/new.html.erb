@@ -1,0 +1,54 @@
+
+<%= form_for Produto.new do |f|%>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="form-group">
+			<%= f.label :nome, class: "control-label" %>
+			<%= f.text_field :nome, class: "form-control" %>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="form-group">
+			<%= f.label :descricao, class: "control-label" %>
+			<%= f.text_area :descricao, rows: 4, class: "form-control" %>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div class="form-group">
+			<%= f.label :preco, class: "control-label" %>
+			<%= f.number_field :preco, step: 0.01, class: "form-control" %>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-6">
+		<div class="form-group">
+			<%= f.label :estabelecimento, class: "control-label" %>
+			<%= f.text_field :estabelecimento, class: "form-control" %>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div class="form-group">
+			<%= f.label :endereco, class: "control-label" %>
+			<%= f.text_field :endereco, class: "form-control" %>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-6">
+		<div class="form-group">
+			<%= f.label :fim_promocao, class: "control-label" %>
+			<%= f.datetime_field :fim_promocao, class: "form-control" %>
+		</div>
+	</div>
+</div>
+
+<%= f.submit class: "btn btn-primary" %>
+<%end%>

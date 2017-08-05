@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  preco: 9.99
+  descricao: MyText
+  estabelecimento: MyString
+  endereco: MyString
+  fim_promocao: 2017-07-28
+
+two:
+  nome: MyString
+  preco: 9.99
+  descricao: MyText
+  estabelecimento: MyString
+  endereco: MyString
+  fim_promocao: 2017-07-28
